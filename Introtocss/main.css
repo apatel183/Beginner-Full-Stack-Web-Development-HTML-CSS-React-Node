@@ -1,0 +1,22 @@
+body{
+    background-color: #CC99ff;
+}
+
+h1{
+    color:red;
+    text-align: center;
+    
+}
+
+.square{   <!--class-->
+    width:100px;
+    height: 100px;
+    background-color: blue;
+    margin: auto;
+}
+#cricle{ <!--using ID -->
+    color:darkblue;
+    font-size: 40px;
+    
+    
+}
