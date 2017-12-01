@@ -1,0 +1,27 @@
+ol > li {
+    color:green;
+}
+
+ul > li{
+    color:red;
+}
+
+.parent > h2{
+    color:rebeccapurple;
+}
+
+.parent div h2{
+    color:aqua
+}
+
+h1,h2,h3,h4, .holla{
+    color: blue;
+}
+
+h3{
+    color:deeppink;
+}
+
+body{
+    font-family: sans-serif;
+}
