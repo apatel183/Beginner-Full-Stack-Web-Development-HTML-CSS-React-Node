@@ -1,0 +1,46 @@
+html{
+    /*setting up standard font 
+    and fall back font as well sans-serif
+    
+    */
+    
+    font-family:"Times New Roman", serif,sans-serif;
+}
+
+
+
+body{
+/*
+    background-image: url(mac.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+    background-color: #444;
+    
+}
+
+h1,h2,h3 { /*grouping css we can group class too or ID */ 
+    color:#ffffff; /* hex code for the color */
+    text-shadow: 2px 2px 5px black; /*vertical to horz, blur, color,  
+    */
+    line-height: 1rem;
+    font-family: sans-serif;
+}
+
+
+.borderImg{
+    border: 2px solid white;
+}
+
+ul li{ /*descendant selector - this garbbing un-order list all of the "li" */
+    
+    color:aqua;
+    font-size: 20px;
+}
+ul > li { /*only one level deep */
+    
+    color: yellow;   
+}
+
+/* css grouping
+
