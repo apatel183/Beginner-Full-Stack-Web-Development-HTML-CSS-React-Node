@@ -1,0 +1,88 @@
+body{
+/*
+    background-image: url(mac.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+    background-color: #444;
+    text-align: center;
+    
+}
+
+h1{ /*grouping css we can group class too or ID */ 
+    color:#ffffff; /* hex code for the color */
+    /*text-shadow: 2px 2px 5px black;  vertical to horz, blur, color 
+    */
+    line-height: 2rem;
+    font-family: 'Open+San',serif,sans-serif;
+}
+
+h2{ /*grouping css we can group class too or ID */ 
+    color:#ffffff; /* hex code for the color */
+    /*text-shadow: 2px 2px 5px black;  vertical to horz, blur, color 
+    */
+    line-height: 2rem;
+    font-family: 'Raleway',serif,sans-serif;
+}
+}
+h3{ /*grouping css we can group class too or ID */ 
+    color:#ffffff; /* hex code for the color */
+    /*text-shadow: 2px 2px 5px black;  vertical to horz, blur, color 
+    */
+    line-height: 2rem;
+    font-family: 'Titillium+Web',serif,sans-serif;
+}
+.formatting{
+    font-size: 24px;
+    line-height: 2em;
+    color: white;
+}
+
+a {
+    text-decoration:none;
+    font-size: 24px;
+    color: yellow;
+    letter-spacing: 10px; /* you can do word spreading as well */
+    text-transform: uppercase;
+}
+
+img{
+    max-width: 100%;
+    height:auto;
+    padding: 5px;
+    opacity: 1; 
+    margin-bottom: 60px;
+
+   
+}
+.borderImg{
+    border-radius: 50%; /*round it pic 10px it makes a cricle*/
+    width: 200px;
+    height: 200px;
+    
+    /*thumbnail*/
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+
+button{
+    
+    color: red;
+    background: yellow;
+    border-radius: 12px;
+    border: none;
+    font-size:25px;
+    padding: 10px 20px 40px 60pxß;   
+}
+ul li{ /*descendant selector - this garbbing un-order list all of the "li" */
+    
+    color:aqua;
+    font-size: 20px;
+}
+ul > li { /*only one level deep */
+    
+    color: yellow;   
+}
+
+/* css grouping
+
