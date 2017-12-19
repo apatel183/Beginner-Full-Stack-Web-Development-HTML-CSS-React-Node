@@ -21,6 +21,16 @@ body{
     padding-top: 4%;
     padding-bottom: 4%;
 }
+/*Label for Chat with me under icon*/
+label{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 28px;
+    line-height: 1.2;
+}
 /*Row style*/
 .row{
     width: 100%;
@@ -47,6 +57,11 @@ body{
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
 
+/*padding for everything total dim control col*/
+*{
+    box-sizing: border-box;
+    
+}
 /*leftside-col*/
 div.leftside-col{
     margin-left: 30%;
@@ -63,6 +78,13 @@ h1.large{
     margin: 0;
     line-height: 70px;
 }
+
+/*header style*/
+h1.section2header{
+    font-size: 65px;
+    text-align: center;
+}
+
 
 /*nested under form*/
 form h2{
@@ -126,7 +148,6 @@ ul.topnav li.dropdownIcon{
 
 /*########Custome Sytle#######*/
 
-
 #section-1-gradient{
     background: #076DFF; /* for browsers that do not support gradients
     */
@@ -137,6 +158,40 @@ ul.topnav li.dropdownIcon{
     /*Firefox*/
     background: -moz-linear-gradient(#076DFF,#65a5ff);
     /*Standard syntax*/
+}
+/*box style https://www.cssmatic.com/box-shadow*/
+div.box{
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px; /*top,right,bottom,left*/
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+        0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+/*button style learn more*/
+button{
+    font-size: 32px;
+    font-weight: 700;
+    color:#fff;
+    background-color:#0069ff;
+    text-align: center;
+    padding: 15px 60px; /*top and bottom 15 and left and right 60*/
+    display: block;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+button.learnmore{
+    display: block;
+    margin: auto;
+}
+
+/*Icon*/
+div.icon{
+    width: 100%;
+    
 }
 /*#########Mobile########*/
 
@@ -168,10 +223,19 @@ ul.topnav li.dropdownIcon{
         text-align: left;
 
     }
+    
+    h1.section2header{
+        font-size: 50px;
+    }
     /*mobile fix*/
-    .col-6{
+    .col-6, .col-4{
         width: 100%;
         margin: 0;
+    }
+/*box for mobile edges*/
+    div.box {
+        padding: 5px;
+        display: block;
     }
     div.leftside-col,
     div.rightside-col{
