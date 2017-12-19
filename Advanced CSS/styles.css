@@ -1,0 +1,190 @@
+/*##########Defaults setting########*/
+
+
+nav,
+header,
+footer{
+    display:block;
+}
+
+body{
+    /* line height to space between the text
+    margin 0 edge to edge */
+    line-height: 1; 
+    margin: 0;
+}
+/*#############Container Custom Style###############*/
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+/*Row style*/
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /*wrap the content*/
+    align-items: center;   
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/*leftside-col*/
+div.leftside-col{
+    margin-left: 30%;
+}
+
+/*Video rightside-col*/
+div.rightside-col{
+    margin-left: 15%;
+}
+
+h1.large{
+    color:#fff;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+/*nested under form*/
+form h2{
+    color:#fff;
+}
+
+/*##Form Style using Attribute Selectors###*/
+
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px; /*always at 100px when shrink or anything*/
+    padding: 5px;
+    border-radius: 7px;
+}
+
+/*###############Nav bar #############*/ 
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* this is list style, float left */
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+/*Parent element topnav and  son element right*/
+ul.topnav li.topnav-right {
+    float:right;
+}
+
+/*text - decoration no under line nav bar style here */
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none; 
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+/*Parent is ul - top nav class children are li a:hover is action */
+ul.topnav li a:hover {
+    background-color: #0000ff;
+    color:#fff;   
+}
+
+/*dropdownIcon to hide on desktop use none*/
+ul.topnav li.dropdownIcon{
+    display: none;
+}
+
+/*########Custome Sytle#######*/
+
+
+#section-1-gradient{
+    background: #076DFF; /* for browsers that do not support gradients
+    */
+    /*For Safari*/
+    background: -webkit-linear-gradient(#076DFF,#65a5ff);
+    /*Opera*/
+    background: -o-linear-gradient(#076DFF,#65a5ff);
+    /*Firefox*/
+    background: -moz-linear-gradient(#076DFF,#65a5ff);
+    /*Standard syntax*/
+}
+/*#########Mobile########*/
+
+
+/*Making the Navbar Mobile Responsive only will show home with nth*/
+@media screen and (max-width:680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+/*Drop down style anochor shows now Trigram for Heaven */
+    ul.topnav li.dropdownIcon{
+        display:block;
+        float:right;
+    }
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top:0;
+        right:0;
+    }
+    ul.topnav.responsive{
+        position: relative;
+    }
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;   
+    }
+    ul.topnav.responsive li a{
+        display:block;
+        text-align: left;
+
+    }
+    /*mobile fix*/
+    .col-6{
+        width: 100%;
+        margin: 0;
+    }
+    div.leftside-col,
+    div.rightside-col{
+        margin: 15px;
+    }
+    input[type="text"]{
+        width: 350px;
+    }
+    .videocontainer iframe{
+        position: relative; /*don't move stay in normal spot*/
+        width: 100%;
+        margin: 0;
+        overflow: hidden; /*stop scroll bar*/
+    }
+    
+}
