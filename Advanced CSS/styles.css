@@ -31,6 +31,13 @@ p{
     font-size: 28px;
     line-height: 1.2;
 }
+
+/*article p tag style*/
+article p {
+    font-size: 35px;
+    padding: 20px
+    
+}
 /*Row style*/
 .row{
     width: 100%;
@@ -170,6 +177,15 @@ div.box{
         0 2px 3px 0 rgba(0,0,0,.1);
 }
 
+/*slop Icon style always garb all important tag"(take out img and see what happens*/
+
+div.slopIcon img{
+    display: block;
+    margin: auto;
+    box-shadow: -2px/*H*/ -2px/*Vertical*/ 20px/*control of Blur*/ 2px /*spread*/ rgba(0/*shadow*/,0/*BG*/,0/*boxcolor*/,.15/*op*/), 2px 2px 17px 2px rgba(0,0,0,1);
+    
+}
+
 /*button style learn more*/
 button{
     font-size: 32px;
@@ -228,14 +244,28 @@ div.icon{
         font-size: 50px;
     }
     /*mobile fix*/
-    .col-6, .col-4{
+    .col-6, .col-4, .col-7,.col-5{
         width: 100%;
         margin: 0;
+    }
+    
+    /*mobile font-size*/
+    article p{
+        font-size: 25px;
     }
 /*box for mobile edges*/
     div.box {
         padding: 5px;
         display: block;
+    }
+    /*parent margin to give around the img*/
+    div.slopIcon{
+        margin: 10px;
+    }
+    
+    /*img for width 100%*/
+    div.slopIcon img{
+        width: 100%;
     }
     div.leftside-col,
     div.rightside-col{
