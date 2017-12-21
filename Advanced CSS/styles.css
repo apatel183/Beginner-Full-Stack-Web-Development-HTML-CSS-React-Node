@@ -209,6 +209,36 @@ div.icon{
     width: 100%;
     
 }
+
+
+/*footer style*/
+
+footer.footsy{ 
+    background-color:#666;
+    padding-left: 10%;
+    
+}
+
+footer.footsy h1{
+    
+    color:#fff;
+    font-size: 35px;
+}
+
+footer.footsy ul {
+    list-style: none; /*removes bullet points*/
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.footsy ul li {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+
+
 /*#########Mobile########*/
 
 
@@ -247,6 +277,11 @@ div.icon{
     .col-6, .col-4, .col-7,.col-5{
         width: 100%;
         margin: 0;
+    }
+    
+    div.mobileStack{
+        width: 50%;
+        display: block;
     }
     
     /*mobile font-size*/
