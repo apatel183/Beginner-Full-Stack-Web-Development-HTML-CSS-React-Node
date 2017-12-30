@@ -1,7 +1,7 @@
 //var name = "Jack";
 //var age = 23;
 //
-//var message = "Hi , my name is  " + name +  "  and I am  " + age + " years old";
+var message = "Hi , my name is  " + name +  "  and I am  " + age + " years old";
 
 var firstName = "Lalu";
 var lastName = "Patel";
@@ -13,3 +13,4 @@ var profileImgUrl = "http://coolpicks.com/lalu.jpg";
 
 var loginWelcomeMessage = "Welcome, " + firstName + ". Happy " + age +  "rd birthday!";
 console.log(loginWelcomeMessage);
+
