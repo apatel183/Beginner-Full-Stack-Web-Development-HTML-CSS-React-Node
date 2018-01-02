@@ -6,7 +6,9 @@
 //}
 
 
-for (var x = 0; x < 15; x++){
+//odd and even excerise 
+
+for (var x = 0; x <= 15; x++){
     if (x == 0){
         console.log(x + " is even");
     }
@@ -17,3 +19,21 @@ for (var x = 0; x < 15; x++){
         console.log(x +  " is odd");
     }
 }
+
+/*
+Using loops, create a Javascript program that prints out the following:
+*  
+* *  
+* * *  
+* * * *  
+* * * * * 
+*/
+
+var star = "";
+
+for (var x = 0; x < 5; x++){
+    console.log(star += "*");
+}
+
+
+
