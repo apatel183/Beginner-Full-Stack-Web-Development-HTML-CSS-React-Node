@@ -1,0 +1,17 @@
+marquee {
+    color:#f00;
+    background-color:#000;
+    font-size:18px;
+    font-weight:bolder;
+}
+
+body {
+    background-color:#000;
+}
+
+div {
+    color:#0f0;
+    font-size:13px;
+    font-weight:bolder;
+    text-align:center ;
+}
