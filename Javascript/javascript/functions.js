@@ -18,6 +18,54 @@ function area(length, width){
     return length * width;
 }
 
-var area1 = area(10,15);
-console.log(area1);
+var rectanglesAreas = [];
+rectanglesAreas.push(area(10,15));
+rectanglesAreas.push(area(14,2));
+rectanglesAreas.push(area(4,5));
 
+console.log(rectanglesAreas);
+//var area1 = area(10,15);
+//console.log(area1);
+
+
+//bank
+
+var bankBalance = 500;
+
+function makeTrasaction(priceOfSale){
+    if (priceOfSale <= bankBalance){
+        bankBalance -= priceOfSale;
+        console.log("Purchase Sucessfull");
+    } else {
+        console.log("Insufficent Funds");
+    }
+}
+
+console.log(bankBalance);
+makeTrasaction(79.00);
+
+console.log(bankBalance);
+makeTrasaction(2.32);
+
+console.log(bankBalance);
+makeTrasaction(10.45);
+
+console.log(bankBalance);
+makeTrasaction(450.00);
+
+
+
+// another way of doing it
+
+var transaction = function(priceOfSale){
+    if (priceOfSale <= bankBalance){
+        bankBalance -= priceOfSale;
+        console.log("Purchase Sucessfull");
+    } else {
+        console.log("Insufficent Funds");
+    }
+};
+
+//var printCustomerName = function(first,last){
+//    console.log("First Name: " + first + " Last Name: " + last);
+//}
